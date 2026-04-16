@@ -1,0 +1,48 @@
+h1, h2, h3 {
+    font-family: Comfortaa, sans-serif;
+    text-decoration-line: underline;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 1000;
+    color: royalblue;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-decoration-style: dashed;
+    font-weight: 900;
+    color: cornflowerblue;
+}
+
+h3 {
+    font-size: 1.17em;
+    text-decoration-style: dotted;
+    font-weight: 800;
+    color:lightskyblue;
+}
+
+p {
+    font-family: Comfortaa, sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    color: darkturquoise;
+    font-size: 1.1em;
+}
+
+h3~p {
+    font-weight: 800;
+    font-size: 0.9em;
+}
+
+/* NOTA: A pesar de que h3+p podría pensarse como un selector más específico que
+         h3~p, resulta que son del mismo nivel.
+         Por ello para poner un estilo a todos los hijos y luego uno distinto al
+         primero de ellos hay que ponerlo en este orden.
+         Así h3~p aplica el estilo a todos y luego h3+p al primero, al revés el
+         selector de todos los hijos por debajo sobreescribe la del primero. */
+h3+p {
+    font-weight: 300;
+}
+
