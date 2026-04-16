@@ -1,0 +1,24 @@
+div {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: honeydew;
+}
+
+p.nombre {
+    font-family: sans-serif;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+
+p.titulo {
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+p.descripcion {
+    font-family: monospace;
+    text-shadow: 2px 2px 1px greenyellow;
+    text-transform: uppercase;
+}
